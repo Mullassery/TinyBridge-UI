@@ -32,7 +32,7 @@ public enum TinyBridgeClientError: Error, Equatable {
         switch self {
         case .transport: return true
         case .timedOut: return true
-        case .rpc(_, _, let kind): return kind == .internal
+        case .rpc(_, _, let kind): return kind == .internalError
         case .decoding, .invalidRequest: return false
         }
     }

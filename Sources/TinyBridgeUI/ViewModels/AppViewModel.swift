@@ -47,6 +47,9 @@ final class AppViewModel: ObservableObject {
     @Published private(set) var pendingOperations: Set<String> = []
     @Published private(set) var events: [OperationEvent] = []
     @Published var lastError: String?
+    @Published var selectedSection: AppSection = .dashboard
+    @Published var backendKind: BackendKind = .live
+    @Published var autoRefresh = true
     @Published private(set) var backendSocketPath: String
 
     private var backend: TinyBridgeBackend

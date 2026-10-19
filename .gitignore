@@ -1,4 +1,27 @@
+# SwiftPM
 .build/
 .swiftpm/
-.DS_Store
+Package.resolved
+
+# Xcode
+*.xcodeproj/
+*.xcworkspace/
+xcuserdata/
+*.xcuserstate
 DerivedData/
+
+# macOS
+.DS_Store
+
+# Build outputs
+*.app
+*.dmg
+*.pkg
+
+# TinyBridge-UI specific
+.tinybridge-ui/
+*.log
+
+# Swift
+*.swiftmodule
+*.swiftdoc

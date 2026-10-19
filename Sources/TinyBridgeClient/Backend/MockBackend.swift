@@ -96,7 +96,7 @@ public actor MockBackend: TinyBridgeBackend {
         }
         let name = request.name ?? "default"
 
-        if var existing = environments[name], existing.lifecycleState.isRunning {
+        if let existing = environments[name], existing.lifecycleState.isRunning {
             throw TinyBridgeClientError.rpc(
                 code: RPCErrorCode.alreadyRunning,
                 message: "Environment already running",

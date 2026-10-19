@@ -37,20 +37,12 @@ let package = Package(
             path: "Sources/TinyBridgeUI"
         ),
 
-        .testTarget(
-            name: "TinyBridgeClientTests",
-            dependencies: ["TinyBridgeClient"],
-            path: "Tests/TinyBridgeClientTests"
-        ),
-        .testTarget(
-            name: "VMConfigurationTests",
-            dependencies: ["VMConfiguration"],
-            path: "Tests/VMConfigurationTests"
-        ),
-        .testTarget(
-            name: "VMObservabilityTests",
-            dependencies: ["VMObservability"],
-            path: "Tests/VMObservabilityTests"
+        // Assertion-based test harness (XCTest requires Xcode; this works with
+        // plain Command Line Tools via `swift run TinyBridgeUITests`).
+        .executableTarget(
+            name: "TinyBridgeUITests",
+            dependencies: ["TinyBridgeClient", "VMConfiguration", "VMObservability"],
+            path: "Tests/TinyBridgeUITests"
         ),
     ]
 )

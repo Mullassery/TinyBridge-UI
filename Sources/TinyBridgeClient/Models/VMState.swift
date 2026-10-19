@@ -26,6 +26,21 @@ public enum VMLifecycleState: Sendable, Equatable {
         return false
     }
 
+    public var isStopped: Bool {
+        if case .stopped = self { return true }
+        return false
+    }
+
+    public var isFailed: Bool {
+        if case .failed = self { return true }
+        return false
+    }
+
+    public var isUnknown: Bool {
+        if case .unknown = self { return true }
+        return false
+    }
+
     public var isTransitional: Bool {
         switch self {
         case .starting, .stopping: return true
