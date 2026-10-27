@@ -1,6 +1,6 @@
 # TinyBridge-UI
 
-[![CI](https://github.com/Mullassery/TinyBridge-UI/actions/workflows/ci.yml/badge.svg)](https://github.com/Mullassery/TinyBridge-UI/actions/workflows/ci.yml)
+[![CI](../TinyBridge-UI/actions/workflows/ci.yml/badge.svg)](../TinyBridge-UI/actions/workflows/ci.yml)
 [![License](https://img.shields.io/badge/license-Apache--2.0-blue.svg)](./LICENSE)
 [![Platform](https://img.shields.io/badge/platform-macOS%2014%2B-lightgrey.svg)](https://www.apple.com/macos/)
 [![Swift](https://img.shields.io/badge/swift-5.10%2B-orange.svg)](https://swift.org)
